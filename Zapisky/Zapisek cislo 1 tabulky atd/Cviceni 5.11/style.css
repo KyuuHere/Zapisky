@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+
+.search_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search_container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search_container label {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.links_container {
+    margin-bottom: 20px;
+}
+
+.links_container a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.links_container a:hover {
+    color: #0056b3;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.card div {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+}
