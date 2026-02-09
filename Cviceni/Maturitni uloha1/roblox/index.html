@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuchyn cena</title>
+</head>
+<body>
+    <h1>Nakonfigurujte si vasi kuchynskou linku</h1>
+    <form action="calculate.php" method="post">
+        <label for="rozmer">Rozmer kuchyne (v metrech):</label>
+        <input type="number" id="rozmer" name="rozmer" required>
+        <br>
+        <select id="barva" name="barva">
+            <option value="bila">Bila</option>
+            <option value="seda">Seda</option>
+            <option value="cerna">Cerna</option>
+            <option value="drevo">Drevo</option>
+        </select>  
+        <br>
+        <label for="material">Material:</label>
+        <select id="material" name="material">
+            <option value="lamino">Lamino</option>
+            <option value="drevo">Drevo</option>
+            <option value="kamen">Kamen</option>
+        </select>
+        <br>
+        <label for="styl_dvirek">Styl dvířek:</label>
+        <select id="styl_dvirek" name="styl_dvirek">
+            <option value="hladka">hladka</option>
+            <option value="ramova">ramova</option>
+            <option value="leskla">leskla</option>
+        </select>
+        <br>
+        <label for="spotrebice">Spotrebice:</label>
+        <select id="spotrebice" name="spotrebice[]" size="4" multiple>
+            <option value="trouba">Trouba</option>
+            <option value="varna_deska">Varna deska</option>
+            <option value="mycka">Mycka</option>
+            <option value="mikrovlnna_trouba">Mikrovlnna trouba</option>
+        </select>
+        <br>
+        <label for="s_instalaci">S instalaci:</label>
+        <input type="checkbox" id="s_instalaci" name="s_instalaci" value="ano">
+        <br>
+        <input type="submit" value="Vypocitat cenu">
+    </form>
+</body>
+</html>
