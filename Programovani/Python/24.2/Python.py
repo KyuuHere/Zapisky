@@ -11,4 +11,3 @@ print("Suma:", sum(fortnite))
 print("Cisel je:",len(fortnite))
 print("Prumer je:",sum(fortnite)/len(fortnite))
 print("nejvetsi cislo je:", fortnite[len(fortnite)-1])
-2
