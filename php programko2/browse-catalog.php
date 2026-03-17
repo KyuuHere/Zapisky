@@ -13,9 +13,19 @@
     $files = scandir('files');
     foreach ($files as $file) {
         if ($file !== '.' && $file !== '..') {
-            echo "<p>$file <a href='files/$file' download>Download</a></p>";
+            $filePath = "files/$file";
+            $fileExtension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+            $imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp'];
+            
+            echo "<p>";
+            if (in_array($fileExtension, $imageExtensions)) {
+                echo "<img src='$filePath' alt='$file' style='max-width: 100px; max-height: 100px; margin-right: 10px;'>";
+            }
+            echo "$file <a href='$filePath' download>Download</a></p>";
+
         }
     }
     ?>
+    <button onclick="window.location.href='index.html'">Back</button>
 </body>
 </html>
